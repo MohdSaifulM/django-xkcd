@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} {% block body %}
+
+<div class="container is-max-desktop">
+  <div class="card mt-5">
+    <div class="card-image is-flex is-justify-content-center">
+      <figure class="card-image">
+        <img src="{{data.img}}" alt="{{data.alt}}" />
+      </figure>
+    </div>
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4">{{data.title}}</p>
+          <p class="subtitle is-6">No: {{data.num}}</p>
+        </div>
+      </div>
+      <div class="content">
+        {{data.transcript}}
+        <br />
+        <strong>{{data.day}}-{{data.month}}-{{data.year}}</strong>
+      </div>
+      <form method="POST">
+        {% csrf_token %}
+        <button class="button is-primary is-light">
+          Click for random comic
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock%}
