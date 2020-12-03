@@ -1,7 +1,7 @@
 # django-xkcd
 django, urls, views
 
-<img src="https://imgs.xkcd.com/comics/tasks_2x.png>
+<img src="https://imgs.xkcd.com/comics/tasks_2x.png">
 
 ## Set up
 - Fork and clone this repository
