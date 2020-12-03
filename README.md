@@ -7,7 +7,7 @@ django, urls, views
 - Fork and clone this repository
 
 ## Objective
-- Practice setting up the Django Framework with an API
+- Practice setting up the Django Framework
 
 ## Task
 - Generate a simple page that when a user clicks a button, a random XKCD comic will be generated
